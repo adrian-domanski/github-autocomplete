@@ -1,4 +1,4 @@
-# GitHub Repositories and Users Autocomplete Component
+# GitHub Repositories and Users Autocomplete Component 
 
 This repository contains the solution for a coding challenge aimed at creating a reusable and self-contained autocomplete component for fetching matching GitHub users and repositories based on a given string of characters.
 
@@ -21,10 +21,6 @@ This repository contains the solution for a coding challenge aimed at creating a
 - React
 - TypeScript
 - Jest
-
-## Code Challenge Artifact
-
-URL to a publicly accessible git repository: [github-repositories](https://github.com/your-username/github-repositories)
 
 ## Installation and Usage
 
