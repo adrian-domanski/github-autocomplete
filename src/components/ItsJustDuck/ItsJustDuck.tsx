@@ -3,7 +3,11 @@ import * as Styled from './ItsJustDuck.style';
 
 const ItsJustDuck = () => {
   return (
-    <Styled.Duck alt='detective duck, helps with debugging' src={duckImg} />
+    <Styled.Duck
+      onClick={() => alert('just a duck')}
+      alt='detective duck, helps with debugging'
+      src={duckImg}
+    />
   );
 };
 

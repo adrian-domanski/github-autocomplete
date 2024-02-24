@@ -83,13 +83,14 @@ const useAutoComplete = ({
     }
   };
 
+  const keyOperation: Record<KeyCodes, () => void> = {
+    [KeyCodes.ArrowDown]: scrollDown,
+    [KeyCodes.ArrowUp]: scrollUp,
+    [KeyCodes.Enter]: () => selectOption(selectedIndex),
+    [KeyCodes.Escape]: clearSuggestions,
+  };
+
   const onKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    const keyOperation: Record<KeyCodes, () => void> = {
-      [KeyCodes.ArrowDown]: scrollDown,
-      [KeyCodes.ArrowUp]: scrollUp,
-      [KeyCodes.Enter]: () => selectOption(selectedIndex),
-      [KeyCodes.Escape]: clearSuggestions,
-    };
     if (keyOperation[e.code as KeyCodes]) {
       keyOperation[e.code as KeyCodes]();
     } else {

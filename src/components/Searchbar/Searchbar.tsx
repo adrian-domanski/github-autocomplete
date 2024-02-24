@@ -10,7 +10,7 @@ const Searchbar = ({ isLoading, icon, ...props }: Props) => {
     <Styled.Wrapper>
       {icon && <Styled.IconWrapper>{icon}</Styled.IconWrapper>}
       <Styled.Input $hasIcon={!!icon} placeholder='Search...' {...props} />
-      {isLoading && <Styled.Spinner />}
+      {isLoading && <Styled.Spinner aria-label='loading...' />}
     </Styled.Wrapper>
   );
 };
