@@ -1,46 +1,96 @@
-# Getting Started with Create React App
+# GitHub Repositories and Users Autocomplete Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the solution for a coding challenge aimed at creating a reusable and self-contained autocomplete component for fetching matching GitHub users and repositories based on a given string of characters.
 
+### Demo
+
+[GitHub Autocomplete Demo](https://github-autocomplete.netlify.app)
+
+## Requirements
+
+- Don’t use an existing autocomplete library.
+- Minimal chars number to initialize search: 3.
+- Result items are combined and displayed alphabetically using repository and profile name as ordering keys.
+- Number of result items should be limited to 50 per request.
+- The component should give visual feedback for when the data is being fetched, the results are empty, or the request resulted in an error.
+- The component supports keyboard strokes (up and down arrows to browse the results, enter to open a new tab with the repository/user page).
+- The solution should also display a meaningful snippet of your ability to test the code.
+
+## Tech Stack
+
+- React
+- TypeScript
+- Jest
+
+## Code Challenge Artifact
+
+URL to a publicly accessible git repository: [github-repositories](https://github.com/your-username/github-repositories)
+
+## Installation and Usage
+
+To get started with this project, follow these steps:
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/adrian-domanski/github-autocomplete.git
+    ```
+
+2. Navigate to the project directory:
+
+   ```bash
+     cd github-autocomplete
+    ```
+    
+2. Install dependencies:
+
+   ```bash
+     npm install
+    ```
+    
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run the following scripts:
 
-### `npm start`
+- `start`: Starts the development server.
+- `build`: Builds the production-ready bundle.
+- `test`: Runs the test suite.
+- `test:watch`: Runs the test suite in watch mode.
+- `test:coverage`: Runs the test suite and generates code coverage report.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+You can run these scripts using npm or yarn, for example:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+npm run start
+```
 
-### `npm test`
+### Dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **@testing-library/user-event**: ^13.5.0
+- **@types/node**: ^16.18.83
+- **@types/react**: ^18.2.58
+- **@types/react-dom**: ^18.2.19
+- **react**: ^18.2.0
+- **react-dom**: ^18.2.0
+- **react-icons**: ^5.0.1
+- **react-scripts**: 5.0.1
+- **react-toastify**: ^10.0.4
+- **styled-components**: ^6.1.8
+- **typescript**: ^4.9.5
+- **web-vitals**: ^2.1.4
 
-### `npm run build`
+### Dev Dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **@babel/preset-env**: ^7.23.9
+- **@babel/preset-react**: ^7.23.3
+- **@babel/preset-typescript**: ^7.23.3
+- **@testing-library/jest-dom**: ^6.4.2
+- **@testing-library/react**: ^14.2.1
+- **@types/jest**: ^29.5.12
+- **babel-jest**: ^29.7.0
+- **babel-plugin-styled-components**: ^2.1.4
+- **jest**: ^29.7.0
+- **jest-environment-jsdom**: ^29.7.0
+- **react-test-renderer**: ^18.2.0
+- **ts-jest**: ^29.1.2
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
