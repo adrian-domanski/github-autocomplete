@@ -3,7 +3,7 @@ import {
   AutocompleteConfig,
   KeyCodes,
   SearchOption,
-} from '../Autocomplete.types';
+} from '../../Autocomplete.types';
 
 interface UseAutoCompleteProps {
   options: AutocompleteConfig;

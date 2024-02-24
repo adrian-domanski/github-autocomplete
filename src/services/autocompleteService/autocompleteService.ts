@@ -3,7 +3,7 @@ import {
   API_URL,
   AutocompleteConfig,
   SearchOption,
-} from '../components/Autocomplete/Autocomplete.types';
+} from '../../components/Autocomplete/Autocomplete.types';
 
 const fetchRepositories = async (
   searchTerm: string,

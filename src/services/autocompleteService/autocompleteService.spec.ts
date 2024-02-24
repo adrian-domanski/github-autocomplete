@@ -1,4 +1,4 @@
-import { API_URL } from '../components/Autocomplete/Autocomplete.types';
+import { API_URL } from '../../components/Autocomplete/Autocomplete.types';
 import { fetchResults } from './autocompleteService';
 import { toast } from 'react-toastify';
 

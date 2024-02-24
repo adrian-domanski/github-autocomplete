@@ -1,9 +1,9 @@
 import { HiSearch } from 'react-icons/hi';
-import useAutoComplete from './hooks/useAutocomplete';
+import useAutoComplete from './hooks/useAutocomplete/useAutocomplete';
 import { AutocompleteConfig, BASE_URL } from './Autocomplete.types';
 import SuggestionItem from './components/SuggestionItem/SuggestionItem';
 import Searchbar from '../Searchbar/Searchbar';
-import { fetchResults } from '../../services/autocompleteService';
+import { fetchResults } from '../../services/autocompleteService/autocompleteService';
 
 import * as Styled from './Autocomplete.style';
 
